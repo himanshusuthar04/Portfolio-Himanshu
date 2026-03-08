@@ -1,0 +1,144 @@
+.about-section {
+  min-height: 100vh;
+  padding: 60px 40px;
+  background: var(--bg);
+  color: var(--text-main);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.about-container {
+  max-width: 850px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: var(--text-secondary);
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about-actions {
+  margin-top: 25px;
+}
+
+.about-btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .about-container p {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+
+  .about-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --bg: #f8f9fa;
+  --text-main: #111827;
+  --text-secondary: #4b5563;
+  --accent: #1e40af;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text-main: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --accent: #38bdf8;
+}

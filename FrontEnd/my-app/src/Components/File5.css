@@ -1,0 +1,150 @@
+.services-section {
+  min-height: 100vh;
+  padding: 90px 20px;
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+.services-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.services-tag {
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.services-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.services-title span {
+  color: var(--accent);
+}
+
+.services-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 900px;
+  margin-bottom: 16px;
+}
+
+.services-intro.secondary {
+  margin-bottom: 60px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 55px rgba(56, 189, 248, 0.25);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.service-subtitle {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.service-desc {
+  margin-top: 14px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  white-space: pre-line;
+}
+
+.services-approach {
+  margin-top: 80px;
+  max-width: 900px;
+}
+
+.services-approach h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.services-approach p {
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.services-cta {
+  margin-top: 70px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.services-cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.services-cta p {
+  max-width: 700px;
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+}
+
+.services-btn {
+  padding: 14px 38px;
+  border-radius: 30px;
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: 0 14px 35px rgba(56, 189, 248, 0.4);
+}
+
+:root {
+  --bg: #f9fafb;
+  --bg-card: #ffffff;
+  --text-main: #111827;
+  --text-secondary: #4b5563;
+  --accent: #2563eb;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --bg-card: rgba(15, 23, 42, 0.9);
+  --text-main: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --accent: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2.2rem;
+  }
+}

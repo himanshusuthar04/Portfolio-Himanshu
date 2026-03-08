@@ -1,0 +1,151 @@
+:root {
+  --bg: #f8fafc;
+  --text: #020617;
+  --muted: #475569;
+  --accent: #2563eb;
+  --border: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg: #020617;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 120px 20px 80px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.contact-wrapper {
+  max-width: 850px;
+  margin: auto;
+}
+
+.contact-tag {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-title span {
+  color: var(--accent);
+}
+
+.contact-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.contact-why {
+  margin: 50px 0;
+}
+
+.contact-why h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.contact-why ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 14px;
+}
+
+.contact-why li {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.contact-why p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted);
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-back {
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 100px;
+  }
+}

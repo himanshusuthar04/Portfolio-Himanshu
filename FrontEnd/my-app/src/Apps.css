@@ -1,0 +1,75 @@
+body.dark {
+  --bg-main: #020617;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --accent: #38bdf8;
+}
+
+body.light {
+  --bg-main: #f9fafb;
+  --bg-card: rgba(0, 0, 0, 0.05);
+  --text-main: #020617;
+  --text-muted: #4b5563;
+  --accent: #2563eb;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  transition: background 0.4s ease, color 0.4s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  background: var(--bg-secondary);
+  transition: background 0.4s ease;
+}
+
+.home-content {
+  background: var(--card-bg);
+  color: var(--text-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-muted);
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+.theme-btn {
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  color: #fff;
+  /* border: none; */
+  border-radius: 12px;
+  padding: 7px 8px;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.navbar {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+}
+
+.navbar a {
+  color: var(--text-main);
+}
+
+.navbar a.active {
+  color: var(--accent);
+}
